@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bancodearquivohospedado/Fi3ur-Fruitsalad-Apple.ico" type="image/x-icon">
+    <title>Parte 3</title>
+    <link rel="stylesheet" href="verde.css">
+</head>
+<body>
+    <h1>Estilo exteno, downloads e imagens dinâmica</h1><hr>
+    <h3>Aplicando estilo externo:</h3>
+    <p>Com estilo externo é possível modificar o estilo de todas as páginas;<br>
+    Existe três tipo de estilo, o estilo linha, o interno e o externo mas linha sobrepôe as duas e o estilo mais indicado para muitas páginas é o estilo externo</p>
+    <p>O estilo externo tem esse título porquer ele é fora do html, isto é, é um arquivo de configuração de estilo assim sendo é independente das páginas e documentos;</p>
+    <p>Para aplicar estilo externo a tag é &lt;Link&gt;comando css; <br>
+        Essa tag vai ficar dentro da tag &lt;head&gt; de preferência abaixo da tag &lt;title&gt; e todas as páginas vão ter essa tag de configuração externa de estilo não havendo necessidade de alterar estilo na página mas apenas copiando e colando a tag de configuração de estilo exteno permitindo personalizar todas as páginas de uma só vez;</p>
+    <p>Comando lembrete para criar estilo externo: <br>
+    Ctrl+click seleção</p>
+    <p>Código modelo para arquivo css estilo externo: <br>
+    h1Chaves aberta+Enter+Color e outros estilos+Chaves fechada;</p>
+    <p>É essencial não esquecer na primeira linha do arquivo css o comando de pontuação: <br>
+    @charset "UTF-8"; <br>
+    sendo o @ para chamar o comando não esquecendo dos dois pontos no final;</p>
+    <h3>Adicionando downloads de mídia:</h3>
+    <p>Só é possível fazer download de mídia se estiver hospedado no próprio servidor;<br>
+        <i>É mais vantajoso compartilhar em zip por que o arquivo reduz o tamanho tornando mais leve para o site;</i></p>
+    <p>Usando a tag&lt;a combinado com o comando download:</p>
+    <ul>
+        <li>
+            <a href="Como Dizer Tudo em Inglês.pdf" download>E-book digital.pdf</a>
+        </li>
+        <li>
+            <a href="Como Dizer Tudo em Inglês.zip" download>E-book digital.zip</a>
+        </li>
+        <li>
+            <a href="2901459-hd_1920_1080_30fps - Copia.zip" download>Vídeo das borboletas.zip</a>
+        </li>
+        <li>
+            <a href="winter-legacy-54-sec-201039 - Copia.zip">Áudio.zip</a>
+        </li>
+        <li>
+            <a href="imagem-g - Copia.zip">Imagem.zip</a>
+        </li>
+    </ul>
+    <h3>Imagens dinámicas adaptáveis:</h3>
+    <p>A tag que permite comando composto para imagens é a tag &lt;picture&gt;<br>
+    Veja a estrutura a seguir;</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="../modulo-1-html5-css3/bancodearquivohospedado/imagemd300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="../modulo-1-html5-css3/bancodearquivohospedado/imagemd600.jpg" type="image/jpg">
+        <img src="../modulo-1-html5-css3/bancodearquivohospedado/imagemd1000.jpg" alt="imagem flexível">
+    </picture>
+    <p><i>Exemplo de imagens que se adapta a tela do usuário; <br> Para que funcione corretamente como vimos acima deve está nessa ordem, isto é, a ordem deve ser obedecida na estrutura HTML;</i></p>
+    <h3>Criando pasta dentro da pasta arquivoindex:</h3>
+    <p>Veja link compactado na palavra próximo;</p>
+    <p style="text-align: right;"><a href="pastaexterna/parte4.html" rel="next">Arquivo externo</a></p>
+    <p><a href="parte2.html" rel="previous">Voltar</a></p>
+</body>
+</html>

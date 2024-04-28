@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="../bancodearquivohospedado/Google-Noto-Emoji-Food-Drink-32349-red-apple.ico" type="image/x-icon">
+    <title>Parte 4</title>
+    <style>
+        h1{
+            color: red;
+        }
+        h3{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pasta externa, lógica Lynux, sites sem aval, link em outra aba e estilo interno</h1><hr>
+    <h3>Trabalhando pasta dentro da pasta:</h3>
+    <p>O index parte 4 html está dentro de uma pasta chamada pasta externa, ao observa detalhes tudo aquilo que está na pasta das outras páginas é aplicado mas nada é aplicado se uma página se encontra dentro de outra pasta embora essa pasta esteja junto com as páginas;</p>
+    <p>Essa página que não está junto das outras requer personalização própria;</p>
+    <h3>Lógica lynux:</h3>
+    <p>Para fazer a ligação dessa página com outras que estão fora dessa pasta usaremos a lógica lynux, será feito um link compactado na palavra voltar com essa lógica, a estrutura html na referência é ../<i>nome da página anterior</i></p>
+    <p><a href="../parte3.html" rel="previous">Voltar</a></p>
+    <p><a href="../index.html">Voltar ao início</a></p>
+    <h3>Sites sem o aval:</h3>
+<p>Para sites que não há interesse de indexa ao site que fez a referência, o comando é rel "nofollow" na linha da tag &lt;a&gt; depois da referência link <br>Para que os mecanismos de busca não faça a correlação do seu site ao site citado na sua página, veja abaixo o exemplo de uma propaganda para um site;</p>
+<p>Essa página é um oferecimento da <a href="https://www.hostnet.com.br/" rel="nofollow">Hostnet</a><br><i>Link sem o aval do site;</i></p>
+<h3>Link em outra aba:</h3>
+<p>Para fazer com que o link seja aberto em outra aba o comando é target "_blank" esse comando é colocado na linha da tag &lt;a&gt;depois do link referenciado;</p>
+<p>Veja meu canal no <a href="https://www.youtube.com/channel/UCZIB-_m4ULDucO15oG9EPCw" target="_blank" rel="external">YouTube</a><br><i>Exemplo de link que abre em outra janela;</i></p>
+<h3>Adicionando estilo interno:</h3>
+<p>Como já foi falado anteriormente o estilo interno é configurado nas configurações de base do documento;</p>
+</body>
+</html>

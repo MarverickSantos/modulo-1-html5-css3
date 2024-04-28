@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bancodearquivohospedado/Fi3ur-Fruitsalad-Apple.ico" type="image/x-icon">
+    <title>Parte 2</title>
+    <link rel="stylesheet" href="verde.css">
+</head>
+<body>
+    <h1>Personalizações básicas</h1><hr>
+    <h3>Adicionando favicon:</h3>
+    <p>Nessa página vamos colocar o favicon usando a tag &lt;Link em seguida escolhendo favicon&gt;, essa tag obrigatoriamente deve estar dentro da tag &lt;head&gt; de preferência acima da tag &lt;title&gt;<br>
+    Considere ter um arquivo icon na mesma pasta do documento index.html;</p>
+    <p>Algumas considerações antes de escolher o favicon é o formato, o PNG e o ICON sendo icon o mais indicado, veja onde encontra;</p>
+    <p>
+        Para escolher um icon aleatório em bibliotecas o softwere é: <br>
+        <ul>
+            <li><a href="https://www.iconarchive.com/">IconArchive</a>;</li>
+        </ul>
+    </p>
+    <p>Para desenhar o favicon o softwere é:
+        <ul>
+            <li><a href="https://www.favicon.cc/">Favicon.cc</a>;</li>
+        </ul>
+    </p>
+    <p>Para converter texto, emoji e imagem em formato png ou icon o softwere é:
+        <ul>
+            <li><a href="https://favicon.io/">Favicon.io</a>;</li>
+        </ul>
+    </p>
+    <p>Comando depois da tag &lt;Link:favicon&gt; dentro das aspas;<br>
+        Ctrl+Space;</p>
+    <h3>Adicionando imagem:</h3>
+    <p>Algumas considerações antes de colocar imagens são:
+    <ul>
+    <li>Formato;
+    <li>Tamanho;
+    <li>Direitos autorais;</li>
+    </li>
+    </li>
+    </ul>Todas essas considerações pode impactar significamente seu site tornando-o mais acessível e leve ou menos acessível e pesado e principalmente atenção total com imagens que tem direitos autorais;
+    </p>
+    <p>Há sites que contém imagens e vídeos livres de direitos autorais, vamos nos aprofundar mais nisso quando for colocar vídeos na página <br>
+    Agora para editar arquivos JPEG,PNG e JPG o progama indicado além de ser um softwere gratuito é o <a href="https://www.gimp.org/downloads/">Gimp</a>:<br>
+    <ul>
+    <li>PNG quando se quiser trabalhar com imagens de fundo transparente;
+    <li>JPEG e JPG quando se quiser trabalhar com imagens melhores compactadas e com a qualidade melhorada;</li>
+    </li>
+    </ul></p>
+    <p>
+    <img src="../modulo-1-html5-css3/bancodearquivohospedado/imagem-m.jpg" alt="Frutas dentro e fora da vasilha em cima da mesa vista de cima" width="400"><br>
+    <em>A imagem nas dimensões escolhidas tomou muito espaço de <br>página, ficou com uma aparência de zoom;</em>
+    </p>
+    <p>Quando uma imagem ou vídeo for muito grande dificulta a visualização para resolver isso é só colocar <strong><big>width</big></strong>=" " antes da tag de fechamento, e dentro das aspas o número que deseja reduzir para vizualização mas o arquivo não sofre alteração o que não é interessante pois o arquivo ainda vai estar com o mesmo tamanho, como é só teste a imagem vai ficar como está do contrário teria que ser redimensionado novamente para um tamanho menor e assim evitaria um arquivo pesado sem necessidade;</p>
+    <p>A imagem acima está no formato JPG nas dimensões 650x433 pesando 82KB <br>
+                As dimensões do arquivo original é de 6000x4000 pesando 1945KB o que é um arquivo pesadíssimo para um site daí a necessidade redimencionar com o Gimp;</p>
+    <p>
+    <img src="../modulo-1-html5-css3/bancodearquivohospedado/Bananap.png" alt="Bananas"><br>
+    <em>Aqui está um exemplo de arquivo PNG com dimensões de 200x245 pesando 61,4KB o arquivo foi dimensionado no tamanho ideal não havendo necessidade de redimensionamento visual width;</em>
+    </p>
+    <br>
+    <h3>Adicionando áudio:</h3>
+    <p>Algumas considerações a serem feitas é a configuração de como será exibido o áudio e o tipo do áudio. <br>
+    É ideal que tenha o áudio disponível em todos os formatos por isso o ideal é aicionar a tag que permite colocar todos os fomatos que são:
+    <ul>
+    <li>Formato MP3;
+    <li>Formato OGG;
+    <li>Formato WAV;</li>
+    </li>
+    </li>
+    </ul>Sendo o formato wav o mais pesado e pouco recomendado por conta disso.</p>
+    <p>A primeira forma para inicio é cococar uma música só: <br>
+    <audio src="bancodearquivohospedado/winter-legacy-54-sec-201039.mp3" controls></audio><br><i>Fomato mp3/mpeg;</i></p>
+    <p>O segundo comando é o mais indicado para um site público pois permite adicionar diferentes formatos para cada tipo de navegadores e dispositivos, a tag audio para adicionar vários áudios precisará combinar a tag &lt;source src=" "&gt;</p>
+    <audio controls>
+    <source src="bancodearquivohospedado/winter-legacy-54-sec-201039.mp3" type="audio/mpeg">
+    <source src="bancodearquivohospedado/winter-legacy--201039.ogg" type="audio/ogg">
+    <source src="bancodearquivohospedado/winter.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegui reproduzir áudio;</p>
+    <!--Observação importante: A regra de colocar múltiplus formatos é o mesmo aquivo só que com formatos diferentes e vai carregar apenas um áudio compatível com o navegador de quem tá acessando se não carregar nenhum áudio a mensagem aparece-->
+    </audio>
+    <br>
+    <h3>Adicionando vídeo hospedado e incorporado:</h3>
+    <p>A desvantagem de ter vídeos hospedado no próprio site é que consome muito tráfego de banda;<br>É mais vantajoso ter vídeos que seja incorporado de outros sites ou plataforma por exemplo o YouTube e Vimeo;</p>
+    <p>Se escolher vídeo hospedado deve ficar atento no tamanho, formatos e direitos autorais, para isso usaremos uma ferramenta para manipular o tamanho e as dimensões dos vídeos e a ferramenta é <a href="https://handbrake.fr/">HandBrake.</a></p>
+    <p><video src="bancodearquivohospedado/2901459-hd_1920_1080_30fps.mp4" width="500" controls></video><br>
+    <i>Exemplo de um único formato vídeo local hospedado no próprio servidor;</i></p>
+    <p>Muitos formatos do mesmo vídeo hospedado no próprio servidor, vai carregar o primeiro formato que o navegador aceitar do contrário aparecerá a mensagem;</p>
+    <ul>
+    <li>Para converter o vídeo em vários formatos o site sugerido é <a href="https://convertio.co/pt/mp4-m4v/">Convertio</a>, os formatos são:</li>
+    </ul>
+    <ol>
+    <li>Mp4
+    <li>M4v
+    <li>Ogv
+    <li>Webm</li>
+    </li>
+    </li>
+    </li>
+    </ol>
+    <p>
+    <video controls poster="bancodearquivohospedado/Capa para Youtube - arrume se comigo Thumbnail.jpg" loop width="500">
+    <source src="bancodearquivohospedado/2901459-hd_1920_1080_30fps.mp4" type="video/mp4">
+    <source src="bancodearquivohospedado/2901459-hd_1920_1080_30fps.ogv" type="video/ogv">
+    <source src="bancodearquivohospedado/2901459-hd_1920_1080_30fps.webm" type="audio/webm">
+    <source src="bancodearquivohospedado/2901459-hd_1920_1080_30fps.m4v" type="video/m4v">
+    Seu navegador não é compatível com o formato de vídeo;
+    </video><br>
+    <i>Exemplo de vídeo disponível em vários formatos, é o mesmo vídeo do exemplo anterior só que com uma thumb criada usando o comando <strong>"poster"</strong> na linha da tag &lt;video&gt;;</i></p>
+    <p>Adicionando vídeos externos:</p>
+    <p><iframe width="500" height="315" src="https://www.youtube.com/embed/pavJSLjL964?si=F5S7o3gZP_kbHCj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><i>Exemplo de vídeo incorporado da plataforma do YouTube;
+    </i></p>
+    <h3>Considerações extras:</h3>
+    <p>Parâmetros do áudio: <br>
+    O comando controls autoplay loop na linha da tag &lt;audio&gt; faz o áudio reproduzir automaticamente assim que carregar o site;</p>
+    <p>O comando preload: Auto,Metadata e None; <br>
+    O auto considera o site carregado só depois que o áudio todo carregar; <br>
+    O metadata mostra as configurções de reprodução de áudio;<br>
+    O none não mostra nenhuma configuração apenas o botão play do áudio;
+    </p>
+    <p>Parâmetros do vídeo: <br>
+    O comando loop na linha da tag &lt;video&gt; recomeça sempre que terminar o vídeo;<br>
+    O comando poster permite adicionar thumbnail no vídeo;</p>
+    <p>Nas linhas das tags de mídia visual como vídeos e imagens os comando width e height é essencial caso o arquivo esteja tomando a página inteira para redimensionar visualmente o arquivo dentro da página, este é altura e aquele é largura;</p>
+    <p style="text-align: right;"><a href="parte3.html" rel="next">Próximo</a></p>
+    <p><a href="index.html" rel="previous">Voltar</a></p>
+</body>
+</html>
